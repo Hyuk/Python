@@ -1,6 +1,5 @@
 # Installation
 
-
 ## Python Installation
 https://www.python.org/
 
