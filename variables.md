@@ -1,9 +1,11 @@
 # Variables = Data Types
 * Numbers
 * Strings
-* list = [ ]
-* Set = { }
+* list = [ "element1", "element2" ]
+* Set = { "element1", "element2" }
 * Dict = { "key1": "value1", "key2": "value2" }
+* Tuple = ( "element1", "element2" )
+* Boolean = True False
 * Functions
 
 ## NUmbers
@@ -30,21 +32,24 @@ type(name) # check the type of the value
 
 ## List
 ```python
-animal = ["원숭이", "고양이", "원숭이", "물고기"]
+animal = ["강아지", "고양이", "원숭이", "물고기"]
 animal[0]
-# 원숭이
+# 강아지
 animal[-1]
 # 물고기
 animal[0:3]
 # M:N => M ~ N-1 
-# ["원숭이", "고양이", "원숭이"]
+# ["강아지", "고양이", "원숭이"]
 animal[1:0]
 # ["고양이", "원숭이", "물고기"]
 animal[:2]
-# ["원숭이", "고양이", "원숭이"]
+# ["강아지", "고양이", "원숭이"]
 ```
 
 ## Set (집합)
+```python
+animal = {"강아지", "고양이", "원숭이", "물고기"}
+```
 
 ### List 와 Set 비교 및 다른점
 * List
@@ -69,13 +74,72 @@ list(set(my_List)) #set으로 한번 변경한 뒤에 list로 변환
 # ['C', 'A', 'B', 'D']
 ```
 
-# Conditional Statement (if else, switch)
+## Dict
+Dict = { "key1": "value1", "key2": "value2" }
 ```python
-1+3
-# 4
+student = {"name": "Hyuk", "age": "20", "email": "hyukho83@gmail.com"}
+student
+# {'name': 'Hyuk', 'age': '20', 'email': 'hyukho83@gmail.com'}
+```
+### Dict에 데이터 추가하기
+```python
+student = {"name": "Hyuk", "age": "20", "email": "hyukho83@gmail.com"}
+student["address"] = "주소"
+student
+# {'name': 'Hyuk', 'age': '20', 'email': 'hyukho83@gmail.com', 'address': '주소'}
+```
+
+## Tuple
+Tuple = ( "element1", "element2" )
+```python
+
+```
+
+### List, Set, Dist vs Tuple 
+List, Set, Dist 먼저 정의한 후에 데이터를 변경 및 추가할 수 있다
+Tuple은 데이터를 추가할 수 없다. 재정의를 해야한다.
+
+## Boolean
+```python
+10 > 5
+# True
+2 > 3
+# False
+```
+# Conditional Statement (if, elif, else)
+```python
+if 10 > 5:
+    print("10이 5보다 크다.")
+# 10이 5보다 크다.
+
+my_num = 23
+if my_num > 0:
+    print(my_num + "은 양수이다.")
+elif my_num == 0:
+    print(my_num + "은 0이다.")
+else:
+    print(my_num + "은 음수이다.")
+
+"참이다" if 10 > 5 else "거짓이다"
+# '참이다'
+
+"양수이다" if 0 > 0 else ("음수이다" if 0 < 0 else "0이다")
+# '0이다'
 ```
 
 # Loops Statement (for loop, do while loop)
 ```python
-
+for i in range(10): # 0부터 (n-1) -> 0,1,2,3,4,5,6,7,8,9
+    print(i)
+#
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
 ```
