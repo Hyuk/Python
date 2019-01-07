@@ -1,5 +1,6 @@
-# Functions
+# 함수 ( Functions )
 
+## 기본적인 함수 선언 및 호출
 ```python
 def greeting():
     print("Hello World")
@@ -12,7 +13,10 @@ def greeting(name):
 
 greeting("Hyuk")
 # Hyuk님, 안녕하세요.
+```
 
+## 조건문이 들어간 기본 함수
+```python
 def check_number(my_number):
     if (my_number > 0):
         print("Number is greater than 0.")
@@ -24,7 +28,8 @@ def check_number(my_number):
 check_number(0)
 # Number is equal to 0.
 ```
-
+## 함수에서 print와 return의 차이
+return을 쓰도록 한다.
 ```python
 def check_number(my_number):
     if (my_number > 0):
