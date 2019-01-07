@@ -52,6 +52,7 @@ result
 * endswith
 
 ### split
+String을 Seperator를 기준으로 나누고 List 형태로 반환한다.
 ```python
 data = "123,hello,world,78,pass"
 data.split(",")
