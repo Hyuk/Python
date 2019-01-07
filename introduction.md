@@ -25,6 +25,7 @@ if, elif, else
 * Column이 없는 csv 파일을 읽는 함수
 * 어떤 csv 파일이든 읽을 수 있는 함수
 * csv => 파이썬에서 의미있는 자료형!
+* open(), with()
 
 ## 6. List
 * ["dog", "cat", "..."]

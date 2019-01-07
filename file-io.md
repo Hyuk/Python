@@ -1,6 +1,7 @@
 # file management
 
 ## 파일 읽기
+open()
 ```
 test.txt
 hellow world
