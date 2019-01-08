@@ -74,6 +74,22 @@ list(set(my_List)) #set으로 한번 변경한 뒤에 list로 변환
 # ['C', 'A', 'B', 'D']
 ```
 
+### List의 각 값을 대문자로 변환하는 방법
+```python
+fruits = ['Banana', 'Apple', 'Lime']
+loud_fruits = [fruit.upper() for fruit in fruits]
+print(loud_fruits)
+# ['BANANA', 'APPLE', 'LIME']
+
+```
+
+### List와 enumerate함수 // List의 각 인덱스 값과 List Value를 Tuple형태로 업데이트 한다
+```python
+fruits = ['Banana', 'Apple', 'Lime'].
+list(enumerate(fruits))
+[(0, 'Banana'), (1, 'Apple'), (2, 'Lime')]
+```
+
 ## Dict
 Dict = { "key1": "value1", "key2": "value2" }
 ```python
