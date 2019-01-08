@@ -209,11 +209,22 @@ with open("./animals.csv",encoding="UTF-8") as fp:
     result = [] # 빈 리스트 생성
     
     rows = fp.read().split("\n")
+    # 1. Column 을 따로 다루는 코드
+    column = rwos[0].split(",")
+
+    # 2. 실제 데이터를 따로 다루는 코드
+    for row in rows[1:]:
+        row_datas = row.split(",")
+        row_dict = {}
+
+        # Column을 for 문 돌리면서 
+        # Column에 적절한 데이터를 추가한다. ( "Korean Name" =  "강아지", "Size => "중형" )
+        for column_index in range(len(column)):
+            column = columns[column_index]
+            row_dict[column] = row_datas[column_index]
+        result.append(row_dict)
 
 len(rows)
 # 5
-
-
-
 
 ```
