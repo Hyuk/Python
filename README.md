@@ -32,3 +32,5 @@ if, elif, else
 * 함수형 프로그래밍 ( 익명함수 Lambda + Lambda Operator - map, reduce, filter )
 * List Comprehension
 
+## 7
+
