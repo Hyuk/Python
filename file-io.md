@@ -193,7 +193,7 @@ jupyter notebook에서 다음 구문을 실행하면 pandas가 설치된다.
 
 ```
 
-
+## Read CSV file and make a list of dict
 ```python
 '''
 animals.csv
@@ -224,7 +224,8 @@ with open("./animals.csv",encoding="UTF-8") as fp:
             row_dict[column] = row_datas[column_index]
         result.append(row_dict)
 
-len(rows)
-# 5
+result
 
 ```
+
+
