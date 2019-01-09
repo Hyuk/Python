@@ -210,7 +210,7 @@ with open("./animals.csv",encoding="UTF-8") as fp:
     
     rows = fp.read().split("\n")
     # 1. Column 을 따로 다루는 코드
-    column = rwos[0].split(",")
+    columns = rows[0].split(",")
 
     # 2. 실제 데이터를 따로 다루는 코드
     for row in rows[1:]:
@@ -219,13 +219,16 @@ with open("./animals.csv",encoding="UTF-8") as fp:
 
         # Column을 for 문 돌리면서 
         # Column에 적절한 데이터를 추가한다. ( "Korean Name" =  "강아지", "Size => "중형" )
-        for column_index in range(len(column)):
+        for column_index in range(len(columns)):
             column = columns[column_index]
             row_dict[column] = row_datas[column_index]
         result.append(row_dict)
 
 result
-
+# [{'Korean name': '강아지', 'English name': 'dog', 'Size': '중형'},
+#  {'Korean name': '고양이', 'English name': 'cat', 'Size': '소형'},
+#  {'Korean name': '물고기', 'English name': 'fish', 'Size': '초소형'},
+#  {'Korean name': '원숭이', 'English name': 'monkey', 'Size': '대형'}]
 ```
 
 
