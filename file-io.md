@@ -259,6 +259,16 @@ read_csv("./animals.csv")
 
 ## Seperator가 다른 파일을 읽는 경우 (tab => tsv, "/", "|" etc)
 ```python
+
+'''
+animals.csv
+
+Korean name,English name,Size
+강아지,dog,중형
+고양이,cat,소형
+물고기,fish,초소형
+원숭이,monkey,대형
+'''
 '''
 animals2.csv
 
