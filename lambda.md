@@ -222,3 +222,23 @@ get_max([1, 100, 2, 3, 4, 105, 6])
 ```
 
 ## List Comprehension - 리스트 표현식 - 리스트를 정의하는 것 처럼 쓰지만, 실제로 내부적으로는 Lambda Operator
+* Lambda 표현식
+```python
+list(map(
+    lambda x: x**2,
+    range(1,5+1)
+))
+
+# [1, 4, 9, 16, 25]
+```
+
+* List Comprehension
+```python
+[
+    i**2
+    for i
+    in range(1,5+1)
+]
+
+# [1, 4, 9, 16, 25]
+```
