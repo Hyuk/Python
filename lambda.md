@@ -221,4 +221,4 @@ get_max([1, 100, 2, 3, 4, 105, 6])
 # 105
 ```
 
-## List Comprehension
+## List Comprehension - 리스트 표현식 - 리스트를 정의하는 것 처럼 쓰지만, 실제로 내부적으로는 Lambda Operator
