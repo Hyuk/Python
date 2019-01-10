@@ -184,4 +184,41 @@ reduce(
 )
 ```
 
+## input: 리스트
+## output: 리스트의 element 중에서 가장 큰 수
+## get_max() => filter...
+
+## Python 2.x ( map, filter, reduce ) => python 3.X (map, filter + reduce)
+## generator (map, filter => list) (generator ...)
+
+
+```python
+def get_max(elements):
+    max = elements[0] # result = 0
+
+    for element in elements:
+        if element >= max:
+            max = element
+    return max
+
+get_max([1, 100, 2, 3, 4, 105, 6])
+# 105
+```
+
+```python
+my_list = [1, 100, 2, 3, 105, 4]
+reduce(
+    lambda a, b: a if a>b else b, my_list
+)
+# 105
+```
+
+```python
+get_max = lambda elements: reduce(
+    lambda a, b:a if a>b else b, my_list
+)
+get_max([1, 100, 2, 3, 4, 105, 6])
+# 105
+```
+
 ## List Comprehension
