@@ -14,7 +14,7 @@ get_sum(1,2,3)
 ```
 
 ```python
-def get_sum(*args):
+def get_sum(*args):  # 함수를 정의할 때 "*" => 인자값을 하나로 묶어주는 기능 "Pack"이라 부른다. 이름보다 "*" 표시가 중요하다
     result = 0
     for arg in args:
         result += arg
@@ -23,4 +23,44 @@ def get_sum(*args):
 get_sum(1,2,3,4,5)
 
 # 15
+```
+
+* 만약 리스트를 함수 인자값으로 받는 다면 오류가 나게 되는데 
+* 리스트를 호출할 떄는 인자변수 앞에 "*"을 붙여서 호출한다.
+* "*" => pack && unpack
+
+```python
+def get_sum(*args):
+    result = 0
+    for arg in args:
+        result += arg
+    return result
+
+numbers = [1,2,3,4,5]
+get_sum(*numbers)
+
+# 15
+```
+
+## *args and **kwargs
+* *args (여러개의 인자 ... => tuple)
+* **kwargs (여러개의 인자 그런데 이름이 있다! (Keyword Argument) => dict)
+
+```python
+def hello(**kwargs):
+    print(kwargs)
+
+hello(name="Hyuk", email="hyukho83@gmail.com")
+```
+
+```python
+def hello(**kwargs):
+    print(kwargs)
+student = {
+    "name": "Hyuk",
+    "email": "hyukho83@gmail.com"
+}
+hello(student) # 오류 발생
+hello(*student) # 오류 발생
+hello(**student)
 ```
