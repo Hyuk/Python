@@ -350,8 +350,8 @@ fruits.csv
 ## 리스트에서 2의 배수 문자표현 및 3의 배수 문자표현과 그리고 나머지 빈칸
 ```python
 [
-    "TwoThree" if (i+1)%2 == 0 && (i+1)%3 == 0 else "TWO" if (i+1)%2 == 0 else "Three" if (i+1)%3 == 0 else ""
+    ("two" if i % 2 == 0 else "") + ("three" if i % 3 == 0 else "")
     for i
-    in range(10)
+    in range(1, 20+1)
 ]
 ```
