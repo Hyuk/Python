@@ -53,6 +53,8 @@ def hello(**kwargs):
 hello(name="Hyuk", email="hyukho83@gmail.com")
 ```
 
+
+* **kwargs는 보통 list of dictionary를 인자값으로 돌릴때 사용한다.
 ```python
 def hello(**kwargs):
     print(kwargs)
@@ -62,5 +64,53 @@ student = {
 }
 hello(student) # 오류 발생
 hello(*student) # 오류 발생
-hello(**student)
+hello(**student) # list of dictionary를 인자값으로 사용할 때 **을 붙인다.
+```
+
+* *arg와 **kwargs를 같이 사용해보자
+```python
+def hello(*args,**kwargs):
+    print(args)
+    print(kwargs)
+
+hello(1,2,3,name="hyuk")
+# (1, 2, 3)
+# {'name': 'hyuk'}
+
+```
+
+* 필수정보 포함해서 *arg와 **kwargs를 같이 사용해보자
+```python
+def hello(name, email, *args, **kwargs):
+    print("안녕하세요. " + name + "입니다.")
+    print("이메일은 " + email + "입니다.")
+    print("--------------------------------")
+    print(kwargs)
+    print("--------------------------------")
+
+hello("Hyuk", "hyukho83@gmail.com")
+
+# 안녕하세요. Hyuk입니다.
+# 이메일은 hyukho83@gmail.com입니다.
+# --------------------------------
+# {}
+# --------------------------------
+```
+
+```python
+def hello(name, email, *args, **kwargs):
+    print("안녕하세요. " + name + "입니다.")
+    print("이메일은 " + email + "입니다.")
+    print("--------------------------------")
+    print(kwargs)
+    print("--------------------------------")
+
+hello("Hyuk", "hyukho83@gmail.com", phonenumber="123456789")
+
+# 안녕하세요. Hyuk입니다.
+# 이메일은 hyukho83@gmail.com입니다.
+# --------------------------------
+# {'phonenumber': '123456789'}
+# --------------------------------
+
 ```
