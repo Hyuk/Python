@@ -1,4 +1,4 @@
-# Class
+# Class 클래스
 
 ```python
 class Person():
@@ -129,4 +129,49 @@ kuyh = Person("kuyh", 28, 5000)
 
 hyuk + kuyh
 
+```
+
+
+## Triangle Class
+
+```python
+class Triangle():
+    
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def __str__(self):
+        return "{width}, {height} Triangle".format(
+            width=self.width, height=self.height
+        )
+
+t1 = Triangle(10,20)
+print(t1)
+
+# 10, 20 Triangle
+```
+
+```python
+class Triangle():
+    
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def __str__(self):
+        return "{width}, {height} Triangle".format(
+            width=self.width, height=self.height
+        )
+
+    def area(self):
+        return self.width*self.height*0.5
+
+    def is_bigger_than(self, another):
+        return self.area() > another.area()
+t1 = Triangle(10,20)
+t2 = Triangle(20,40)
+
+t1.is_bigger_than(t2)
+# False
 ```
