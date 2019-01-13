@@ -21,3 +21,9 @@ jupyter notebook에서 다음 구문을 실행하면 pandas가 설치된다.
 
 ```
 
+## 라이브러리 불러오기
+```python
+import os
+from os import listdir
+# 현재 폴더의 파일을 열거한다
+```
