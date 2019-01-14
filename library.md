@@ -89,3 +89,30 @@ list(filter(
 ]
 # ['second.txt', 'test.txt']
 ```
+
+* 폴더만들기
+```python
+os.makedirs("./makedirs")
+
+```
+
+* 파일 복사하기
+```python
+def copy(src_filename, dest_filename):
+    with open(src_filename, "r") as src_fp
+        data = src_fp.read()
+
+        with open(dest_filename, "w") as dest_fp:
+            dest_fp.write(data)
+```
+
+```python
+#  src.txt 파일을 만들고, automate 에는 파일이 없는 상태다.
+copy("./src.txt","./automate/dest.txt") # 복사하기 함수 실행
+#또는 경로로 적어서 실행한다.
+copy(os.path.join("src.txt"),(os.path.join("automate","dest.txt")))
+os.listdir(os.path.join("./automate/")) # automate 폴더안의 파일 리스트 반환하기
+['dest.txt']
+
+# 이렇게 파일을 복사하게 되면 메타정보가 깨지게 되는 점 유의하자
+```
