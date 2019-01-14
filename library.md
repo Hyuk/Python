@@ -21,9 +21,71 @@ jupyter notebook에서 다음 구문을 실행하면 pandas가 설치된다.
 
 ```
 
-## 라이브러리 불러오기
+## OS
 ```python
 import os
 from os import listdir
+
+listdir()
 # 현재 폴더의 파일을 열거한다
+# 또는
+
+import os
+os.listdir()
+# 현재 폴더의 파일을 열거한다
+# 상대경로
+os.listdir("./") # 현재폴더
+os.listdir("../") # 상위폴더
+os.listdir("../../") # 상위폴더의 상위폴더
+
+# 절대경로
+os.listdir("D:/hugo")
+```
+* os.path.join()
+```python
+os.path.join("../")
+# ../
+os.listdir(
+    os.path.join("../")
+)
+# 상위폴더의 파일을 리스트 형태로 반환한다.
+```
+
+* 폴더에서 txt포맷 형식만 찾기
+```python
+filenames = os.listdir(os.path.join("./"))
+filenames
+'''
+['.ipynb_checkpoints',
+ '20190107.ipynb',
+ 'animals.csv',
+ 'animals2.csv',
+ 'basic.ipynb',
+ 'fruits.csv',
+ 'second.txt',
+ 'test.txt']
+'''
+
+# for loop
+result = []
+for filename in filenames:
+    if filename.endswith(".txt"):
+        result.append(filename)
+result
+# ['second.txt', 'test.txt']
+
+# lambda
+list(filter(
+    lambda filename: filename.endswith(".txt"),
+    filenames
+))
+# ['second.txt', 'test.txt']
+
+# list comprehension
+[
+    filename
+    for filename in filenames
+    if filename.endswith(".txt")
+]
+# ['second.txt', 'test.txt']
 ```
