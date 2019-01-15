@@ -18,7 +18,6 @@ jupyter notebook에서 다음 구문을 실행하면 pandas가 설치된다.
 # Requirement already satisfied: six>=1.5 in d:\programs\python\python37-32\lib\site-packages (from python-dateutil>=2.5.0->pandas) (1.12.0)
 # Installing collected packages: pytz, numpy, pandas
 # Successfully installed numpy-1.15.4 pandas-0.23.4 pytz-2018.9
-
 ```
 
 ## OS
