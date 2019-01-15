@@ -152,4 +152,28 @@ os.rename("./new_automate/dest.txt","/new_automate/copy.txt")
 shutil.move("./new_automate/copy.txt","./new_automate/move.txt")
 ```
 
+* 년도 별로 사진 파일 분류하기
+사진 파일 이름은 다음과 같이 동일한 포맷 갖는다고 가정
+screenshot-2019-01-15.jpg
+```python
+if "Photos" in os.listdir(): # 현재 폴더에 "Photos"라는 폴더가 있다면
+    shutil.rmtree("./Photos") # "Photos" 폴더를 삭제한다.
+os.makedirs("Photos") # "Photos" 폴더를 생성한다.
+
+filenames = os.listdir("./hello/") # "Hello" 폴더 안의 파일들을 filenames 리스트로 얻는다.
+
+for filename in filenames: # filenames의 리스트 첫번째 부터 마지막 열까지 for loop을 돌리면서
+    year = filename.split(".")[0].split("-")[1] # 년도 부분을 year라는 변수에 저장한다.
+    month = filename.split(".")[0].split("-")[2] # 월 부분을 month라는 변수에 저장한다.
+
+    if not year in os.listdir("./Photos/"): # Photos 폴더에 year에 해당하는 폴더가 없다면,
+        os.makedirs("./Photos/{year}/".format(year=year)) # 그 year에 해당하는 폴더를 만든다.
+
+    if not month in os.listdir(os.path.join(".","Photos", year)): # Photos 폴더의 해당 year 폴더 안에 month에 해당하는 폴더가 없다면,
+        os.makedirs("./Photos/{year}/{month}".format(year=year, month=month)) # 그 month에 해당하는 폴더를 만든다.
+
+    src_filename = os.path.join(".","hello",filename) # 원본 파일 경로 지정
+    dest_filename = os.path.join(".","Photos",year,month,filename) # 복사본 파일 경로 지정
+    shutil.copy2(src_filename, dest_filename) # 파일 복사를 시작한다.
+```
 
