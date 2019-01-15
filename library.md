@@ -115,4 +115,41 @@ os.listdir(os.path.join("./automate/")) # automate 폴더안의 파일 리스트
 ['dest.txt']
 
 # 이렇게 파일을 복사하게 되면 메타정보가 깨지게 되는 점 유의하자
+# 따라서 이를 보완하기 위해 파일 및 폴더 관리 라이브러리는
+# shutil 라이브러리를 사용하도록 한다.
 ```
+
+## shutil 
+* 복잡한 파일 관리
+```python
+import shutil
+# 대부분 shutil.copy2 를 많이 사용한다.
+# 파일 복사하기
+shutil.copy2(os.path.join("src.txt"),os.path.join("automate","dest.txt"))
+os.listdir(os.path.join("./automate/"))
+# 이 방법은 파일만 복사할 수 있다.
+
+# 폴더 복사하기
+# 현재 존재하는 automate폴더를 새로 만들어진 new_automate에 복사한다.
+shutil.copytree(os.path.join("automate"),os.path.join("new_automate"))
+os.listdir() # 폴더가 복사되었는지 확인
+
+
+# 파일 삭제하기
+os.remove("./automate/dest.txt")
+
+# 폴더 삭제하기
+os.removedirs("./automate/") # 폴더안에 파일이 없어야 지울 수 있다.
+
+shutil.rmtree("./automate/") # 폴더안에 파일이 있어도 지울 수 있다.
+
+```
+
+** 파일 이동하기
+```python
+os.rename("./new_automate/dest.txt","/new_automate/copy.txt")
+
+shutil.move("./new_automate/copy.txt","./new_automate/move.txt")
+```
+
+
