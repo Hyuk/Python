@@ -177,3 +177,37 @@ for filename in filenames: # filenames의 리스트 첫번째 부터 마지막 �
     shutil.copy2(src_filename, dest_filename) # 파일 복사를 시작한다.
 ```
 
+## 폴더 압축하기
+
+* zip파일 형태로 압축하기
+```python
+shutil.make_archive(
+    "Photos",
+    "zip",
+    "./Photos/"
+)
+```
+
+* tar.gz 파일 형태로 압축하기
+```python
+shutil.make_archive(
+    "Photos",
+    "gztar",
+    "./Photos/"
+)
+```
+
+* 현재 폴더에서 파일 확장자 zip으로 끝나는 파일 리스트로 만들기
+```python
+[
+    filename
+    for filename in os.listdir()
+    if filename.endswith(".zip")
+]
+# ['Photos.zip']
+```
+
+# 압축 풀기
+```python
+shutil.unpack_archive("Photos.zip","./MyPhotos/")
+```
