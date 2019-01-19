@@ -111,7 +111,7 @@ Tuple = ( "element1", "element2" )
 
 ```
 
-### List, Set, Dist vs Tuple 
+### List, Set, Dict vs Tuple 
 List, Set, Dist 먼저 정의한 후에 데이터를 변경 및 추가할 수 있다
 Tuple은 데이터를 추가할 수 없다. 재정의를 해야한다.
 
@@ -122,26 +122,7 @@ Tuple은 데이터를 추가할 수 없다. 재정의를 해야한다.
 2 > 3
 # False
 ```
-# Conditional Statement (if, elif, else)
-```python
-if 10 > 5:
-    print("10이 5보다 크다.")
-# 10이 5보다 크다.
 
-my_num = 23
-if my_num > 0:
-    print(my_num + "은 양수이다.")
-elif my_num == 0:
-    print(my_num + "은 0이다.")
-else:
-    print(my_num + "은 음수이다.")
-
-"참이다" if 10 > 5 else "거짓이다"
-# '참이다'
-
-"양수이다" if 0 > 0 else ("음수이다" if 0 < 0 else "0이다")
-# '0이다'
-```
 
 # Loops Statement (for loop, do while loop)
 ```python

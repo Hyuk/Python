@@ -2,11 +2,9 @@
 * Python Basics
 * Variables
 
-# Automatic
+## Basics
 
-# Python Basic
-## 1. 자료형
-문자열, 숫자, 리스트, 튜플, 딕셔너리, 셋, ... * 딕셔너리(사전): key => value
+## Variables
 
 ## 2. 조건문 ( Conditional Statement ) ~ Boolean(True, False)
 if, elif, else
