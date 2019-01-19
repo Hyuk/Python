@@ -1,34 +1,31 @@
 # Python
-* Python Basics
-* Variables
 
-## [Basics]()
+1. [Installation](https://github.com/Hyuk/Python/blob/master/installation.md)
 
-## [Variables](https://github.com/Hyuk/Python/blob/master/variables.md)
+1. [Install Jupyter Python](https://github.com/Hyuk/Python/blob/master/jupyter-notebook.md)
 
-## 2. 조건문 ( Conditional Statement ) ~ Boolean(True, False)
-if, elif, else
+1. [Basics](https://github.com/Hyuk/Python/blob/master/variables.md)
 
-## 3. 반복문 ( Loops )
-`for _____ in _____:`
-`for i in range(100):`
-`for animal in animals`
-`for key, value in students.items()`
+1. [Variables](https://github.com/Hyuk/Python/blob/master/variables.md)
 
-## 4. 함수 ( Function )
-* 함수를 정의하는 방법 ( `def` ) - `return ______`
-* 함수를 호출하는 방법
+1. [Operations](https://github.com/Hyuk/Python/blob/master/operations.md)
 
-## 5. 파일 입출력 ( File input / output )
-* Column이 없는 csv 파일을 읽는 함수
-* 어떤 csv 파일이든 읽을 수 있는 함수
-* csv => 파이썬에서 의미있는 자료형!
-* open(), with()
+1. [Conditional Statements](https://github.com/Hyuk/Python/blob/master/condition-statements.md)
 
-## 6. List
-* ["dog", "cat", "..."]
-* 함수형 프로그래밍 ( 익명함수 Lambda + Lambda Operator - map, reduce, filter )
-* List Comprehension
+1. [Loops Statements](https://github.com/Hyuk/Python/blob/master/loop-statements.md)
 
-## 7
+1. [Functions](https://github.com/Hyuk/Python/blob/master/functions.md)
 
+1. [Functions Extends](https://github.com/Hyuk/Python/blob/master/function-extend.md)
+
+1. [File Input/Output (I/O)](https://github.com/Hyuk/Python/blob/master/file-io.md)
+
+1. [Lambda](https://github.com/Hyuk/Python/blob/master/lambda.md)
+
+1. [List Comprehension](https://github.com/Hyuk/Python/blob/master/list-comprehensions.md)
+
+1. [Pandas](https://github.com/Hyuk/Python/blob/master/pandas.md)
+
+1. [Library](https://github.com/Hyuk/Python/blob/master/library.md)
+
+1. [Web Crawling](https://github.com/Hyuk/Python/blob/master/web-crawling.md)
