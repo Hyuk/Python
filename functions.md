@@ -1,7 +1,7 @@
 # 함수 ( Functions )
 * [float() - 정수를 실수로 변환하는 함수](#float)
-* int() - 실수를 정수로 변환하는 함수
-* input() - 사용자로 부터 문자열을 입력 받는 함수
+* [int() - 실수를 정수로 변환하는 함수](#int)
+* [input() - 사용자로 부터 문자열을 입력 받는 함수](#input)
 
 ## float()
 * 정수를 실수로 변환하는 함수
@@ -33,6 +33,15 @@ string1 = "24"
 num2 = int(string1)
 num2
 # 24
+```
+
+## input()
+* 사용자로 부터 문자열을 입력받는다
+```python
+saysomething1 = input()
+# hello world
+saysomething1
+# hello world
 ```
 
 ## 기본적인 함수 선언 및 호출
