@@ -8,6 +8,8 @@
 
 1. [Variables](https://github.com/Hyuk/Python/blob/master/variables.md)
 
+1. [String Formatting](https://github.com/Hyuk/Python/blob/master/string-formatting.md)
+
 1. [Operations](https://github.com/Hyuk/Python/blob/master/operations.md)
 
 1. [Conditional Statements](https://github.com/Hyuk/Python/blob/master/condition-statements.md)
