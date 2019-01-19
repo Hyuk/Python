@@ -2,9 +2,9 @@
 * Python Basics
 * Variables
 
-## Basics
+## [Basics]()
 
-## Variables
+## [Variables](https://github.com/Hyuk/Python/blob/master/variables.md)
 
 ## 2. 조건문 ( Conditional Statement ) ~ Boolean(True, False)
 if, elif, else
