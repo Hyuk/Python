@@ -51,7 +51,16 @@ Name
 # '문재인'
 ```
 
-
+* 변수에 한줄 이상의 문장을 문장기호 없이 저장할 경우 세개의 Single quote 또는 Double quote를 사용한다.
+```python
+multiline = 
+'''
+welcome to 
+the python school
+'''
+multiline
+# 'welcome to \nthe python school\n'
+```
 
 
 ## List

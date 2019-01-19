@@ -1,7 +1,4 @@
 # Operations
-```python
-= + - / * ** //
-```
 
 ## Addition ( + )
 * 덧셈
@@ -54,8 +51,21 @@ result
 # 'Hello Hello Hello Hello Hello '
 ```
 
+## Power ( ** )
+* 승, 제곱 세제곱 등
+```python
+num1 = 3
+num2 = 4
+
+result = num1 ** num2
+
+result 
+
+# 81
+```
+
 ## Classic Division ( / )
-나눗셈 결과값 실수
+* 나눗셈 결과값 실수
 ```python
 num1 = 7
 num2 = 2
@@ -68,7 +78,7 @@ result
 ```
 
 ## Flost Division ( // )
-나눗셈에서의 몫
+* 나눗셈에서의 몫
 ```python
 num1 = 7
 num2 = 2
@@ -81,7 +91,7 @@ result
 ```
 
 ## Remainder ( % )
-나눗셈에서의 나머지
+* 나눗셈에서의 나머지
 ```python
 num1 = 7
 num2 = 2
