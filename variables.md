@@ -1,20 +1,22 @@
 # Variables = Data Types
-* Numbers
-* Strings
-* list = [ "element1", "element2" ]
-* Set = { "element1", "element2" }
-* Dict = { "key1": "value1", "key2": "value2" }
-* Tuple = ( "element1", "element2" )
-* Boolean = True False
-* Functions
+* Numbers (숫자)
+* Strings (문자)
+* list = [ "element1", "element2" ] (리스트)
+* Set = { "element1", "element2" } (세트)
+* Dict = { "key1": "value1", "key2": "value2" } (딕셔너리)
+* Tuple = ( "element1", "element2" ) (튜플)
+* Boolean = True False (불린)
+* Functions (함수)
 
 ## NUmbers
+* 숫자
 ```python
 1000 # 정수형 데이터
 1000.0 # 실수형 데이터
 ```
 
 ## Strings
+* 문자
 ```python
 "Hyuk" # 문자형 데이터
 "Hello" + ", Hyuk" # "+" 기호를 사용해서 Concatenate 기능을 사용할 수 있다.
@@ -22,13 +24,35 @@
 ```
 
 ## Variables
+* 기본적인 변수 사용 방법
 ```python
 name = "Hyuk" # Assign a value to the variable
+
 "Hello, " + name # concatenate with the plus sign
+
 # Hello, Hyuk
+
 type(name) # check the type of the value
+
 # str
 ```
+
+* 변수명은 Case Sensitive해서 이다. 대문자 소문자 구분하며 다른 변수로 인식된다.
+```python
+NAME = "문재인"
+name = "트럼프"
+
+name
+
+# '트럼프'
+
+Name
+
+# '문재인'
+```
+
+
+
 
 ## List
 ```python
