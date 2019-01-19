@@ -3,17 +3,30 @@
 = + - / * ** //
 ```
 
-## Classic Division ( / )
-나눗셈 결과값 실수
+## Addition ( + )
+* 덧셈
 ```python
-num1 = 7
-num2 = 2
+num1 = 5
+num2 = 6
 
-result = num1 / num2
+result = num1 + num2
 
 result
 
-# 3.5
+#  11
+```
+
+## Subtraction ( - )
+* 뺄셈
+```python
+num1 = 6
+num2 = 5
+
+result = num1 - num2
+
+result
+
+# 1
 ```
 
 ## Multiplication ( * )
@@ -39,6 +52,19 @@ result = string1 * num1
 result
 
 # 'Hello Hello Hello Hello Hello '
+```
+
+## Classic Division ( / )
+나눗셈 결과값 실수
+```python
+num1 = 7
+num2 = 2
+
+result = num1 / num2
+
+result
+
+# 3.5
 ```
 
 ## Flost Division ( // )
