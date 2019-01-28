@@ -1,7 +1,24 @@
 # 내장함수 ( Internal Functions )
+* [print() - 프린트 함수](#print)
 * [float() - 정수를 실수로 변환하는 함수](#float)
 * [int() - 실수를 정수로 변환하는 함수](#int)
 * [input() - 사용자로 부터 문자열을 입력 받는 함수](#input)
+
+
+## print()
+* 프린트 함수
+```python
+num1 = 24
+print(num1)
+# 24
+```
+
+* 여러개의 프린트 함수를 쓸때 한줄로 표현하는 방법
+```python
+print("Hello World!", end = ' ')
+print("My name is Hyuk")
+# Hello World! My name is Hyuk
+```
 
 ## float()
 * 정수를 실수로 변환하는 함수
