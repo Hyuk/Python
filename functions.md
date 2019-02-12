@@ -98,9 +98,11 @@ data.endswith("ass")
 ```
 
 ## List 관련 함수들
-* append
+* append()
+* sort()
+* reverse()
 
-### append
+### append()
 List에 새로운 데이터를 추가할 때
 ```python
 animals = []
@@ -110,6 +112,22 @@ animals
 animals.append("cat")
 animals
 # ['dog', 'cat']
+```
+
+### sort()
+List 오름차순 정령
+```python
+myList = [4,6,9,0,3,7,4,2,1]
+myList.sort()
+myList
+```
+
+### reverse()
+List 역순 정렬
+```python
+myList = [4,6,9,0,3,7,4,2,1]
+myList.reverse()
+myList
 ```
 
 ## Dict 관련 함수들
