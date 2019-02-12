@@ -100,8 +100,11 @@ data.endswith("ass")
 ## List 관련 함수들
 * append()
 * extend()
+* += operator
 * sort()
 * reverse()
+* sorted()
+* sum()
 
 ### append()
 * List에 새로운 데이터 한개를 추가할 때
@@ -134,6 +137,21 @@ myList
 # [1,2,3,[4,5,6]]
 ```
 
+### += operator
+* 
+```python
+myList = [1,2,3]
+myValue = 2
+myList += [myValue]
+myList
+# [1, 2, 3, 2]
+myList = [1,2,3]
+myCollection = [4,5]
+myList += myCollection
+myList
+# [1, 2, 3, 4, 5]
+```
+
 ### sort()
 * List 오름차순 정령
 ```python
@@ -150,6 +168,22 @@ myList = [4,6,9,0,3,7,4,2,1]
 myList.reverse()
 myList
 # [1, 2, 4, 7, 3, 0, 9, 6, 4]
+```
+
+### sorted()
+```python
+myList = []
+toSortList = [4,8,4,2,1,0,5]
+myList = sorted(toSortList)
+myList
+# [0, 1, 2, 4, 4, 5, 8]
+```
+
+### sum()
+```python
+toSortList = [4,8,4,2,1,0,5]
+sum(toSortList)
+# 24
 ```
 
 ## Dict 관련 함수들
