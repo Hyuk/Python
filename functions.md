@@ -99,11 +99,12 @@ data.endswith("ass")
 
 ## List 관련 함수들
 * append()
+* extend()
 * sort()
 * reverse()
 
 ### append()
-List에 새로운 데이터를 추가할 때
+* List에 새로운 데이터 한개를 추가할 때
 ```python
 animals = []
 animals.append("dog")
@@ -114,8 +115,27 @@ animals
 # ['dog', 'cat']
 ```
 
+### extend()
+* List에 새로운 여러개의 데이터를 추가할 떄
+* 서로 다른 리스트를 합칠 때 사용한다.
+```python
+myList = [1,2,3]
+myCollection = [4,5,6]
+myList.extend(myCollection)
+myList
+# [1,2,3,4,5,6]
+```
+* append() 함수를 사용하면 Sub List형태로 들어간다.
+```python
+myList = [1,2,3]
+myCollection = [4,5,6]
+myList.append(myCollection)
+myList
+# [1,2,3,[4,5,6]]
+```
+
 ### sort()
-List 오름차순 정령
+* List 오름차순 정령
 ```python
 myList = [4,6,9,0,3,7,4,2,1]
 myList.sort()
@@ -124,7 +144,7 @@ myList
 ```
 
 ### reverse()
-List 역순 정렬
+* List 역순 정렬
 ```python
 myList = [4,6,9,0,3,7,4,2,1]
 myList.reverse()
@@ -136,7 +156,7 @@ myList
 * get
 
 ### get
-학생 1000명을 for 문 돌다가, address 가 있으면 address를 출력하고, 없으면 "주소 없음" 이라고 출력하자.
+* 학생 1000명을 for 문 돌다가, address 가 있으면 address를 출력하고, 없으면 "주소 없음" 이라고 출력하자.
 ```python
 student = {"name": "Hyuk", "email": "email@email.com"}
 student["name"]
