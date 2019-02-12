@@ -120,6 +120,7 @@ List 오름차순 정령
 myList = [4,6,9,0,3,7,4,2,1]
 myList.sort()
 myList
+# [0, 1, 2, 3, 4, 4, 6, 7, 9]
 ```
 
 ### reverse()
@@ -128,6 +129,7 @@ List 역순 정렬
 myList = [4,6,9,0,3,7,4,2,1]
 myList.reverse()
 myList
+# [1, 2, 4, 7, 3, 0, 9, 6, 4]
 ```
 
 ## Dict 관련 함수들
