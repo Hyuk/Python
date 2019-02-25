@@ -6,14 +6,6 @@
 # Jupyter Notebook
 ```
 
-* Multi Line Comment
-보통 함수 선언 다음 줄에 넣어서 표기한다.
-```python
-"""
-Multiple Comment
-"""
-```
-
 ## Print
 ```python
 print("Hello World")

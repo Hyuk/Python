@@ -22,6 +22,18 @@
 "Hello" + ", Hyuk" # "+" 기호를 사용해서 Concatenate 기능을 사용할 수 있다.
 # Hello, Hyuk
 ```
+* Multiline String
+```python
+email1 = """
+Dear Hyuk
+
+Hello World
+
+Best Regards,
+Hugo
+"""
+print(email1)
+```
 
 ## Variables
 * 기본적인 변수 사용 방법
