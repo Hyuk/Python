@@ -1,8 +1,25 @@
 # Web Crawling
 
+## 정적인 사이트 ( == Server rendering )
+* HTML data를 가져온다.( crawling, scraping )
+* 가져온 data에서 적절한 값을 추출하는 과정.( parsing )
+* CSS Selector
+
+## 동적인 사이트 ( == Client rendering )
+* 어딘가에서 (_____________:: API) 찾는 과정!
+* 데이터를 불러오고
+* 데이터를 추출하는 (parsing)
+
 ```
 !pip install requests
 !pip install bs4
+```
+
+* Starts with
+```python
+import requests
+from bs4 import BeautifulSoup
+
 ```
 
 ```python
