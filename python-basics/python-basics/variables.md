@@ -133,13 +133,13 @@ list(enumerate(fruits))
 ```
 
 ## Dict (Dictionary)
-```python
 Dict = { "key1": "value1", "key2": "value2" }
-
+```python
 student = {"name": "Hyuk", "age": "20", "email": "hyukho83@gmail.com"}
 student
 # {'name': 'Hyuk', 'age': '20', 'email': 'hyukho83@gmail.com'}
 ```
+
 ### Dict에 데이터 추가하기
 ```python
 student = {"name": "Hyuk", "age": "20", "email": "hyukho83@gmail.com"}
@@ -149,8 +149,9 @@ student
 ```
 
 ## Tuple
-```python
 Tuple = ( "element1", "element2" )
+```python
+animal = ( "dog", "cat" )
 ```
 
 ### List, Set, Dict vs Tuple 
