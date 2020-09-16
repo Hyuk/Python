@@ -1,6 +1,5 @@
-# Algorithm
+# Fibonacci series up to n
 
-## Fibonacci series up to n
 ```python
 def fib(n):
     a, b = 0, 1
