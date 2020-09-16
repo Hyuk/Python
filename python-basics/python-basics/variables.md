@@ -133,8 +133,9 @@ list(enumerate(fruits))
 ```
 
 ## Dict (Dictionary)
-Dict = { "key1": "value1", "key2": "value2" }
 ```python
+Dict = { "key1": "value1", "key2": "value2" }
+
 student = {"name": "Hyuk", "age": "20", "email": "hyukho83@gmail.com"}
 student
 # {'name': 'Hyuk', 'age': '20', 'email': 'hyukho83@gmail.com'}
@@ -148,9 +149,8 @@ student
 ```
 
 ## Tuple
-Tuple = ( "element1", "element2" )
 ```python
-
+Tuple = ( "element1", "element2" )
 ```
 
 ### List, Set, Dict vs Tuple 
