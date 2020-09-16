@@ -1,22 +1,59 @@
 # Variables = Data Types
 * Numbers (숫자)
 * Strings (문자)
-* list = [ "element1", "element2" ] (리스트)
+* List = [ "element1", "element2" ] (리스트)
 * Set = { "element1", "element2" } (세트)
 * Dict = { "key1": "value1", "key2": "value2" } (딕셔너리)
 * Tuple = ( "element1", "element2" ) (튜플)
 * Boolean = True False (불린)
 * Functions (함수)
 
-## NUmbers
-* 숫자
+## Variables
+* Basic Usage of Variable
+```python
+name = "Hyuk" # Assign a value to the variable
+
+"Hello, " + name # concatenate with the plus sign
+
+# Hello, Hyuk
+
+type(name) # check the type of the value
+
+# str
+```
+
+* Variables are case sensitive
+```python
+NAME = "Obama"
+name = "Trump"
+
+name
+
+# 'Trump'
+
+NAME
+
+# 'Obama'
+```
+
+* Multiline String
+```python
+multiline = 
+'''
+welcome to 
+the python school
+'''
+multiline
+# 'welcome to \nthe python school\n'
+```
+
+## Numbers (숫자)
 ```python
 1000 # 정수형 데이터
 1000.0 # 실수형 데이터
 ```
 
-## Strings
-* 문자
+## Strings (문자)
 ```python
 "Hyuk" # 문자형 데이터
 "Hello" + ", Hyuk" # "+" 기호를 사용해서 Concatenate 기능을 사용할 수 있다.
@@ -35,68 +72,28 @@ Hugo
 print(email1)
 ```
 
-## Variables
-* 기본적인 변수 사용 방법
-```python
-name = "Hyuk" # Assign a value to the variable
-
-"Hello, " + name # concatenate with the plus sign
-
-# Hello, Hyuk
-
-type(name) # check the type of the value
-
-# str
-```
-
-* 변수명은 Case Sensitive해서 이다. 대문자 소문자 구분하며 다른 변수로 인식된다.
-```python
-NAME = "문재인"
-name = "트럼프"
-
-name
-
-# '트럼프'
-
-Name
-
-# '문재인'
-```
-
-* 변수에 한줄 이상의 문장을 문장기호 없이 저장할 경우 세개의 Single quote 또는 Double quote를 사용한다.
-```python
-multiline = 
-'''
-welcome to 
-the python school
-'''
-multiline
-# 'welcome to \nthe python school\n'
-```
-
-
 ## List
 ```python
-animal = ["강아지", "고양이", "원숭이", "물고기"]
+animal = ["Dog", "Cat", "Monkey", "Fish"]
 animal[0]
-# 강아지
+# Dog
 animal[-1]
-# 물고기
+# Fish
 animal[0:3]
 # M:N => M ~ N-1 
-# ["강아지", "고양이", "원숭이"]
+# ["Dog", "Cat", "Monkey"]
 animal[1:0]
-# ["고양이", "원숭이", "물고기"]
+# ["Cat", "Monkey", "Fish"]
 animal[:2]
-# ["강아지", "고양이", "원숭이"]
+# ["Dog", "Cat", "Monkey"]
 ```
 
 ## Set (집합)
 ```python
-animal = {"강아지", "고양이", "원숭이", "물고기"}
+animal = {"Dog", "Cat", "Monkey", "Fish"}
 ```
 
-### List 와 Set 비교 및 다른점
+### List와 Set 비교 및 다른점
 * List
 여러 Elements 들을 저장하고 있는 자료형 (Element 하나하나는 어떤 자료형 상관 x)
 중복 o, 순서 o
