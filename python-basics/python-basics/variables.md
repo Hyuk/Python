@@ -24,14 +24,14 @@ type(name) # check the type of the value
 
 * Variables are case sensitive
 ```python
-NAME = "Obama"
-name = "Trump"
+president = "Obama"
+President = "Trump"
 
-name
+President
 
 # 'Trump'
 
-NAME
+president
 
 # 'Obama'
 ```
