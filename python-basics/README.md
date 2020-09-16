@@ -2,7 +2,7 @@
 
 1. [Installation](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/installation.md)
 
-1. [Install Jupyter Python](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/jupyter-notebook.md)
+1. [Jupyter notebook basic](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/jupyter-notebook.md)
 
 1. [Basics](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/variables.md)
 
