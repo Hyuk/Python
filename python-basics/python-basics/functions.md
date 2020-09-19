@@ -81,7 +81,7 @@ def check_number(my_number):
 check_number(0)
 # Number is equal to 0.
 ```
-### print vs return in Fuction
+### To store the result of the function
 * Use return
 ```python
 def check_number(my_number):
