@@ -191,7 +191,7 @@ myList
 ```
 
 ### += operator
-* 
+* same as extend() function
 ```python
 myList = [1,2,3]
 myValue = 2
