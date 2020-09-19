@@ -1,21 +1,74 @@
-# 함수 ( Functions )
+# Functions
 
-## 기본적인 함수 선언 및 호출
+### Making a function
 ```python
 def greeting():
     print("Hello World")
 
 greeting()
+
 # Hello World
-
-def greeting(name):
-    print(name + "님, 안녕하세요.")
-
-greeting("Hyuk")
-# Hyuk님, 안녕하세요.
 ```
 
-## 조건문이 들어간 기본 함수
+### Passing a single argument
+```python
+def greeting(name):
+    print("Hello, " + name)
+
+greeting("Hyuk")
+
+# Hello, Hyuk
+```
+
+### Using a default value
+```python
+def animal(name, animal='dog'):
+    print("I have a " + animal + ".")
+    print("Its name is " + name + ".")
+animal('willie')
+
+# I have a dog.
+# Its name is willie.
+```
+
+### Using None to make argument optional
+```python
+def animal(animal, name=None):
+    print("\nI have a "+ animal +".")
+    if name:
+        print("Its name is "+name+".")
+animal('snake')
+
+# I have a snake.
+```
+
+### Returning a dictionary
+```python
+def full_name(first, last):
+    person = {'first': first, 'last':last}
+    return person
+
+x = full_name('Trilo', 'Chan')
+print(x)
+
+# {'first': 'Trilo', 'last': 'Chan'}
+```
+
+### Passing a list as an argument
+```python
+def greet_users(names):
+    for name in names:
+        msg = "Hello, " + name + "!"
+        print(msg)
+username = ['hannah', 'ty', 'margot']
+greet_users(usernames)
+
+# Hello, hannah!
+# Hello, ty!
+# Hello, margot!
+```
+
+## Basic function with if statement
 ```python
 def check_number(my_number):
     if (my_number > 0):
@@ -28,8 +81,8 @@ def check_number(my_number):
 check_number(0)
 # Number is equal to 0.
 ```
-## 함수에서 print와 return의 차이
-return을 쓰도록 한다.
+### print vs return in Fuction
+* Use return
 ```python
 def check_number(my_number):
     if (my_number > 0):
@@ -44,7 +97,7 @@ result
 # 'Number is equal to 0.'
 ```
 
-## String과 관련된 함수들
+## Functions related with String
 * split
 * join
 * replace
