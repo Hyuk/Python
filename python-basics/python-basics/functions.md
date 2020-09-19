@@ -97,7 +97,7 @@ result
 # 'Number is equal to 0.'
 ```
 
-## Functions related with String
+### Functions related with String
 * split
 * join
 * replace
