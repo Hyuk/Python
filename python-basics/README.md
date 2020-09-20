@@ -20,6 +20,10 @@
 
 1. [Functions Extends](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/function-extend.md)
 
+1. [XPath](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/xpath.md)
+
+1. [Regular Expressions](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/regular-expressions.md)
+
 1. [File Input/Output (I/O)](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/file-io.md)
 
 1. [Lambda](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/lambda.md)

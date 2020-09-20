@@ -1,9 +1,15 @@
 # Library
 * [random](https://github.com/Hyuk/Python/blob/master/random-library.md)
 * [urllib](https://github.com/Hyuk/Python/blob/master/urllib-library.md)
+* [pandas](https://github.com/Hyuk/Python/blob/master/python-library/python-library/pandas.md)
 
-## Pandas
-* 파일 입출력시 사용된다
+* How to check which version library is installed.
+```bash
+$ pip show package
+```
+
+### Pandas
+* file input and output
 
 ### Jupyter Notebook에서 Pandas Library를 Import하지 못할때
 jupyter notebook에서 다음 구문을 실행하면 pandas가 설치된다.

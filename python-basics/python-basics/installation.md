@@ -1,6 +1,6 @@
 # Installation
 
-## Python Installation
+### Python Installation
 https://www.python.org/
 
 * Download python install file from the website.
@@ -9,7 +9,7 @@ https://www.python.org/
 
 * Check the checkbox option for the Path
 
-## Jupyter Notebook Installation
+### Jupyter Notebook Installation
 
 * Open CMD window
 * Install Jupyter Notebook
@@ -19,4 +19,9 @@ $ pip install jupyter
 *Open Jupyter Notebook
 ```bash
 $ jupyter notebook 
+```
+
+### How to run python.py file on CMD
+```bash
+$ C:/python/python37-32/python.exe D:/playground/python/python.py
 ```
