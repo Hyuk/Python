@@ -1,4 +1,7 @@
 # Regular Expressions
+* [Python official doc](https://docs.python.org/3/library/re.html)
+* [w3schools Python RegEx](https://www.w3schools.com/python/python_regex.asp)
+
 
 ### import regular expressions library
 ```python
@@ -69,4 +72,48 @@ m = p.search("life care")
 print_search(m)
 
 # care
+```
+
+### group
+* return the part of the string match with the pattern
+### string
+* return the all string if the string match with the pattern
+### start
+* return the first index of the part of the string match with the pattern 
+### end
+* return the last index of the part of the string match with the pattern
+### span
+* return the tuple of first index and the last index of the part of the string match with the pattern
+
+```python
+def print_search(m):
+  if m:
+    print("m.group()", m.group())
+    print("m.string", m.string)
+    print("m.start()", m.start())
+    print("m.end()", m.end())
+    print("m.span()", m.span())
+  else:
+    print("it doesn't match")
+
+p = re.compile("ca.e")
+m = p.search("life care")
+print_search(m)
+
+# m.group() care
+# m.string life care
+# m.start() 5
+# m.end() 9
+# m.span() (5, 9)
+```
+
+### findall
+* return the list of the match part of the string.
+
+```python
+p = re.compile("ca.e")
+lst = p.findall("good care cafe") # findall
+print(lst)
+
+# ['care', 'cafe']
 ```
