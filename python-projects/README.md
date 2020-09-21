@@ -1,6 +1,6 @@
 # Python Projects
 
-### Web Scrapping
+### Web Scrapping - BeautifulSoup
 
 * [Naver Cartoon Scrapping](https://github.com/Hyuk/Python/blob/master/python-projects/python-projects/naver-cartoon-scrapping.md)
 
@@ -9,3 +9,8 @@
 * [Daum Movie Image Scrapping](https://github.com/Hyuk/Python/blob/master/python-projects/python-projects/daum-movie-image-scrapping.md)
 
 * [Naver Stock Info Scrapping and Save as CSV](https://github.com/Hyuk/Python/blob/master/python-projects/python-projects/naver-stock-info-scrapping-and-save-as-csv.md)
+
+
+### Automation - Selenium
+
+* [Naver Login](https://github.com/Hyuk/Python/blob/master/python-projects/python-projects/naver-login.md)

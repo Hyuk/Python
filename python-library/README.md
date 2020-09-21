@@ -5,6 +5,7 @@
 * [LXML](https://github.com/Hyuk/Python/blob/master/python-library/python-library/lxml.md)
 * [Regular Expressions](https://github.com/Hyuk/Python/blob/master/python-library/python-library/regular-expressions.md)
 * [Requests](https://github.com/Hyuk/Python/blob/master/python-library/python-library/requests.md)
+* [Selenium](https://github.com/Hyuk/Python/blob/master/python-library/python-library/selenium.md)
 
 ### How to check which version library is installed.
 ```bash

@@ -29,7 +29,7 @@ for year in range(2015, 2020):
       f.write(image_res.content)
 
     # top 5
-    if idx > 4:
+    if idx >= 4:
       break
 
 ```
