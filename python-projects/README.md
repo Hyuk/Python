@@ -13,4 +13,6 @@
 
 ### Automation - Selenium
 
-* [Naver Login](https://github.com/Hyuk/Python/blob/master/python-projects/python-projects/naver-login.md)
+* [Naver Flight Ticket Info](https://github.com/Hyuk/Python/blob/master/python-projects/python-projects/naver-flight-ticket-info.md)
+
+* []()
