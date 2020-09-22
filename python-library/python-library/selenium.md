@@ -54,31 +54,34 @@ from selenium import webdriver
 
 browser = webdriver.Chrome() # webdriver.Chrome(./chromedriver.exe)
 
-# 1. go to the naver.com
+# Go to the naver.com
 browser.get("https://www.naver.com")
 
-# 2. click the login button
+# Click the login button
 browser.find_element_by_class_name("link_login").click()
 
-# 3. fill out ID & Password
+# Fill out ID & Password
 browser.find_element_by_id("id").send_keys("naver_id")
 browser.find_element_by_id("pw").send_keys("password")
 
-# 4. click the login button
+# Click the login button
 browser.find_element_by_id("log.login").click()
 
 time.sleep(3)
 
-# 5. fill out new ID & Password
+# Fill out new ID & Password
 browser.find_element_by_id("id").clear()
 browser.find_element_by_id("id").send_keys("my_id")
 
-# 6. print html document
+# Print html document
 print(browser.page_source)
 
-# 7. close current browser tab
+# Take a screenshot
+browser.get_screenshot_as_file("google_movie.png")
+
+# Close current browser tab
 browser.close()
 
-# 8. quit current browser
+# Quit current browser
 browser.quit()
 ```

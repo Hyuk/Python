@@ -1,4 +1,4 @@
-# Google Movie
+# Google Movie Active Scrapping
 
 ```python
 import requests
@@ -52,7 +52,7 @@ while True:
     break
   prev_height = curr_height
 print("Complete Scroll")
-
+browser.get_screenshot_as_file("google_movie.png") # Take a Screenshot
 import requests
 from bs4 import BeautifulSoup
 
