@@ -20,3 +20,5 @@
 * [Daum Real Estate](https://github.com/Hyuk/Python/blob/master/python-projects/python-projects/daum-real-estate.md)
 
 * [Web Assistant](https://github.com/Hyuk/Python/blob/master/python-projects/python-projects/web-assistant.md)
+
+* [EBS Open Lips English](https://github.com/Hyuk/Python/blob/master/python-projects/python-projects/ebs-open-lips-english.md)
