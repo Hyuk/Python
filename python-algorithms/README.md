@@ -1,6 +1,6 @@
 # Python Algorithms
 
-* [Codeup](https://github.com/Hyuk/Python/blob/master/python-algorithms/python-algorithms/codeup/README.md)
+* [Codeup](https://github.com/Hyuk/Python/blob/master/python-algorithms/python-algorithms/codeup.md)
 
 ### Numbers
 
