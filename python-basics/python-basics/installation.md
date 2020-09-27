@@ -16,7 +16,7 @@ https://www.python.org/
 ```bash
 $ pip install jupyter 
 ```
-*Open Jupyter Notebook
+* Open Jupyter Notebook
 ```bash
 $ jupyter notebook 
 ```
