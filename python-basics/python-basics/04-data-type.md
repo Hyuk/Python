@@ -47,7 +47,7 @@ multiline
 # 'welcome to \nthe python school\n'
 ```
 
-### Numbers (숫자)
+## Numbers (숫자)
 ```python
 1000 # 정수형 데이터
 1000.0 # 실수형 데이터
@@ -64,7 +64,7 @@ e, e2
 # (1340000.0, 0.00134)
 ```
 
-### Strings (문자)
+## Strings (문자)
 ```python
 "Hyuk" # 문자형 데이터
 "Hello" + ", Hyuk" # "+" 기호를 사용해서 Concatenate 기능을 사용할 수 있다.
@@ -89,7 +89,7 @@ print(email1)
 # \t => tab
 ```
 
-* String Formatting
+### String Formatting
 * 숫자 치환하기
 ```python
 "%d/%d"%(2016,1)
@@ -118,7 +118,99 @@ len(s3)
 # 16
 ```
 
-### List
+### Functions related with String
+* upper
+* lower
+* strip
+* split
+* join
+* replace
+* startswith
+* endswith
+
+#### upper
+```python
+s = "hi"
+s.upper()
+print(s)
+# 'HI'
+```
+
+#### lower
+```python
+s = "HI"
+s.lower()
+print(s)
+# 'hi'
+```
+
+#### strip
+```python
+s = "  hi      "
+s.strip()
+p(s)
+# 'hi'
+
+s = "   h i    "
+s.strip()
+p(s)
+# 'h i'
+```
+
+#### split
+String을 Seperator를 기준으로 나누고 List 형태로 반환한다.
+```python
+data = "123,hello,world,78,pass"
+data.split(",")
+# ['123', 'hello', 'world', '78', 'pass']
+```
+
+#### join
+```python
+",".join("abcd")
+# 'a,b,c,d'
+
+data2 = ['123', 'hello', 'world']
+"-".join(data2)
+# '123-hello-world'
+```
+
+#### split <=> join
+
+#### replace
+```python
+data = "123,hello,world,78,pass"
+data.replace(",","|")
+# '123|hello|world|78|pass'
+
+s = "Life is too short"
+s.replace(" ","")
+# 'Lifeistooshort.'
+```
+
+#### in
+check the string has the letters inside
+```python
+data = "123,hello,world,78,pass"
+"ello" in data
+# True
+```
+
+#### startswith
+```python
+data = "123,hello,world,78,pass"
+data.startswith("12")
+# True
+```
+
+#### endswith
+```python
+data = "123,hello,world,78,pass"
+data.endswith("ass")
+# True
+```
+
+## List
 ```python
 animal = ["Dog", "Cat", "Monkey", "Fish"]
 animal[0]
@@ -134,7 +226,7 @@ animal[:2]
 # ["Dog", "Cat", "Monkey"]
 ```
 
-### Set (집합)
+## Set (집합)
 ```python
 animal = {"Dog", "Cat", "Monkey", "Fish"}
 ```
