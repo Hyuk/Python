@@ -11,3 +11,7 @@
 ```bash
 $ pip show library
 ```
+
+### Python Packages
+* [pypi.org](https://pypi.python.org/pypi)
+* [awesome-python](https://github.com/vinta/awesome-python)

@@ -1,4 +1,5 @@
 # Python Solutions
 
-* [EXCEL]
+* [EXCEL](excel.md)
 * [PDF](pdf.md)
+* [WORD](word.md)
