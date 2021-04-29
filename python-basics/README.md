@@ -6,11 +6,9 @@
 
 1. [Basics](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/variables.md)
 
-1. [Variables](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/variables.md)
+1. [Data Type](04-data-type.md)
 
-1. [String Formatting](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/string-formatting.md)
-
-1. [Operations](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/operations.md)
+1. [Operations](05-operations.md)
 
 1. [Conditional Statements](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/condition-statements.md)
 
