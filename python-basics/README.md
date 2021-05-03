@@ -1,12 +1,12 @@
 # Python
 
-1. [Installation](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/installation.md)
+1. [Installation](01-installation.md)
 
 1. [Jupyter notebook basic](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/jupyter-notebook.md)
 
-1. [Basics](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/variables.md)
+1. [Basics](02-python-basics.md)
 
-1. [Data Type](04-data-type.md)
+1. [Data Types](03-python-datatypes.md)
 
 1. [Operations](05-operations.md)
 
