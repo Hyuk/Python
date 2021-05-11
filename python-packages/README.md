@@ -12,6 +12,36 @@
 $ pip show library
 ```
 
+### How to check the information of the Python Package
+```bash
+$ pip show simplejson
+```
+
+### How to install the Python Package
+```bash
+$ pip install simplejson
+```
+
+### Show the installed python packages
+```bash
+$ pip list
+```
+
+### How to uninstall the python package
+```bash
+$ pip uninstall simplejson
+```
+
+### How to upgrade the python package
+```bash
+$ pip install --upgrade simplejson
+```
+
+### How to find the python packages
+```bash
+$ pip search simple*
+```
+
 ### Python Packages
 * [pypi.org](https://pypi.python.org/pypi)
 * [awesome-python](https://github.com/vinta/awesome-python)

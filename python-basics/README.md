@@ -1,14 +1,16 @@
 # Python
 
-1. [Installation](01-installation.md)
+1. [Python Installation & Virtual Environment Setup](01-installation.md)
 
-1. [Jupyter notebook basic](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/jupyter-notebook.md)
+1. [Jupyter notebook basic](jupyter-notebook.md)
 
-1. [Basics](02-python-basics.md)
+1. [Python Basics: Print Function](02-python-basics-print-function.md)
 
-1. [Data Types](03-python-datatypes.md)
+1. [Python Data Types](03-python-data-types.md)
 
-1. [Operations](05-operations.md)
+1. [Python Operations](04-operations.md)
+
+1. [Python Format Conversion](05-format-conversion.md)
 
 1. [Conditional Statements](https://github.com/Hyuk/Python/blob/master/python-basics/python-basics/condition-statements.md)
 

@@ -8,7 +8,7 @@
 * Flost Division(//)
 * Remainder(%)
 
-## Addition(+)
+### Addition(+)
 * 덧셈
 ```python
 num1 = 5
@@ -21,7 +21,7 @@ result
 #  11
 ```
 
-## Subtraction(-)
+### Subtraction(-)
 * 뺄셈
 ```python
 num1 = 6
@@ -34,7 +34,7 @@ result
 # 1
 ```
 
-## Multiplication(*)
+### Multiplication(*)
 * 숫자 * 숫자
 ```python
 num1 = 3
@@ -59,7 +59,7 @@ result
 # 'Hello Hello Hello Hello Hello '
 ```
 
-## Power (**)
+### Power (**)
 * 승, 제곱 세제곱 등
 ```python
 num1 = 3
@@ -72,7 +72,7 @@ result
 # 81
 ```
 
-## Classic Division (/)
+### Classic Division (/)
 * 나눗셈 결과값 실수
 ```python
 num1 = 7
@@ -85,7 +85,7 @@ result
 # 3.5
 ```
 
-## Flost Division (//)
+### Flost Division (//)
 * 나눗셈에서의 몫
 ```python
 num1 = 7
@@ -98,7 +98,7 @@ result
 # 3
 ```
 
-## Remainder (%)
+### Remainder (%)
 * 나눗셈에서의 나머지
 ```python
 num1 = 7

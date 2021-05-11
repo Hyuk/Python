@@ -1,11 +1,12 @@
 # Data Type
+* Boolean = True False (불린)
 * Numeric (숫자) - Integer(int), Complex Number, Float(float)
 * Strings (문자) - (str)
+* Bytes
 * List = [ "element1", "element2" ] (리스트) - (list)
 * Set = { "element1", "element2" } (세트) - (set)
 * Dictionary = { "key1": "value1", "key2": "value2" } (딕셔너리) - (dict)
 * Tuple = ( "element1", "element2" ) (튜플) - (tuple)
-* Boolean = True False (불린)
 * Functions (함수)
 
 ## Variables

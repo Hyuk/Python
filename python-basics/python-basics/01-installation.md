@@ -1,4 +1,4 @@
-# Installation
+# Python Installation & Virtual Environment Setup
 
 ### Python Installation
 https://www.python.org/
@@ -30,10 +30,18 @@ $ C:/python/python37-32/python.exe D:/playground/python/python.py
 * python_basic 이라는 python 가상환경을 만든다.
 * python_basic 가상환경이 만들어 지면, Script 폴더로 들어가서 activate.bat을 실행한다.
 * bash에서 잘 안되면, CMD 환경에서 진행한다.
-```bash
+```cmd
 $ python -m venv python_basic
 $ cd Scripts
 $ activate.bat
+$ deactivate.bat
+```
+* 맥의 경우,
+```terminal
+$ python -m venv python_basic
+$ cd bin
+$ source ./activate.bat
+$ source ./deactivate.bat
 ```
 * How to check the list of the installed python packages
 ```bash
@@ -169,3 +177,8 @@ Python > Terminal: Activate Environment
 Activate Python Environment in Terminal created using the Extension
 ```
 * 해당 항목이 선택되어 있다면, 사용자 입력시 activation.bat이 출력되기 때문이다.
+
+### 가상 환경 종료
+```cmd
+(python_basic) $ deactivate.bat
+```
