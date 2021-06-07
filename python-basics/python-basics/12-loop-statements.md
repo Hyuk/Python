@@ -113,6 +113,7 @@ my_info =  {
     "city": "Seoul"
 }
 
+# 기본 값은 키
 for key in my_info:
     print("my_info", key)
 
@@ -120,6 +121,7 @@ for key in my_info:
 # my_info age
 # my_info city
 
+# 값
 for key in my_info.values():
     print("my_info", key)
 
@@ -127,12 +129,36 @@ for key in my_info.values():
 # my_info 33
 # my_info Seoul
 
+# 키
 for key in my_info.keys():
     print("my_info", key)
 
 # my_info name
 # my_info age
 # my_info city
+
+# 키 and 값
+for k, v in my_info.items():
+    print("my_info", k, v) 
+
+# my_info name Kim
+# my_info age 33
+# my_info city Seoul
+
+name = "KennRY"
+
+for n in name:
+    if n.isupper():
+        print(n.lower())
+    else:
+        print(n.upper())
+
+# k
+# E
+# N
+# N
+# r
+# y
 ```
 
 ```python
@@ -154,7 +180,82 @@ for key in student:
 
 for key, value in student.items():
     print(key + " => " + str(value))
-
-
 ```
 
+### break
+```python
+numbers = [14, 3, 4, 7, 10, 24, 17, 2, 33, 15, 34, 36, 38]
+
+for num in numbers:
+    if num == 33:
+        print("found : 33!")
+        break
+    else:
+        print("not found : 33!")
+
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# found : 33!
+```
+
+### for - else statement
+```python
+numbers = [14, 3, 4, 7, 10, 24, 17, 2, 37, 15, 34, 36, 38]
+
+for num in numbers:
+    if num == 33:
+        print("found : 33!")
+        break
+    else:
+        print("not found : 33!")
+else:
+    print("Not found 33......")
+
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# not found : 33!
+# Not found 33......
+```
+
+
+### continue
+```python
+lt = ["1", 2, 5, True, 4.3, complex(4)]
+
+for v in lt:
+    if type(v) is float:
+        continue
+    print("타입 : ", type(v))
+
+# 타입 :  <class 'str'>
+# 타입 :  <class 'int'>    
+# 타입 :  <class 'int'>    
+# 타입 :  <class 'bool'>   
+# 타입 :  <class 'complex'>
+```
+
+### 문자열 변환
+```python
+name = "Niceman"
+print(list(reversed(name)))
+print(tuple(reversed(name)))
+
+# ['n', 'a', 'm', 'e', 'c', 'i', 'N']
+# ('n', 'a', 'm', 'e', 'c', 'i', 'N')
+```

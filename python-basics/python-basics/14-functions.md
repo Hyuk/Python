@@ -42,6 +42,22 @@ animal('snake')
 # I have a snake.
 ```
 
+### Returning a value
+```python
+def hello_return(world):
+    val = "Hello " + str(world)
+    return val
+
+str = hello_return("Python!!!!!")
+print(str)
+# Hello Python!!!!!
+```
+
+### Returning multiple values
+```python
+
+```
+
 ### Returning a dictionary
 ```python
 def full_name(first, last):
