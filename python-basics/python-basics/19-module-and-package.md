@@ -1,0 +1,28 @@
+# Module & Package
+
+# Section08
+# 파이썬 모듈과 패키지
+
+# 패키지 예제
+# 상대 경로
+# .. : 부모 디렉토리
+# .  : 현재 디렉토리
+
+class Fibonacci:
+    def __init__(self, title="fibonacci"):
+        self.title = title
+        
+    def fib(n):
+        a, b = 0, 1
+        while a < n:
+            print(a, end='')
+            a, b = b, a + b
+        print()
+        
+    def fib2(n):
+        result = []
+        a, b = 0, 1
+        while a < n:
+            result.append(a)
+            a, b = b, a + b
+        return result

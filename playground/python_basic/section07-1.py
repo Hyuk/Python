@@ -27,3 +27,9 @@ print(user2.name)
 print(user3.name)
 
 print(user1.stock_num)
+print(user2.stock_num)
+print(user3.stock_num)
+
+del user1
+print(user2.stock_num)
+print(user3.stock_num)
