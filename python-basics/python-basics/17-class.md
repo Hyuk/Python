@@ -1,4 +1,94 @@
 # Class 클래스
+* 파이썬 클래스 상세 이해
+* Self, 클래스, 인스턴스 변수
+* 클래스, 인스턴스 차이 중요
+* 네임스페이스 : 객체를 인스턴스화 할 때 저장된 공간
+* 클래스 변수 : 직접 사용 가능, 객체 보다 먼저 생성
+* 인스턴스 변수 : 객체마다 별도로 존재, 인스턴스 생성 후 사용
+
+### 선언
+```python
+class UserInfo:
+    # 속성, 메소드
+    def __init__(self, name):
+        self.name = name
+    def user_info_p(self):
+        print("Name : ", self.name)
+
+# 네임스페이스 (user1, user2) (user1 != user2)
+user1 = UserInfo("Kim")
+user1.user_info_p()
+# Name :  Kim
+user2 = UserInfo("Park")
+user2.user_info_p()
+# Name :  Park
+
+print(id(user1))
+# 1950222607920
+print(id(user2))
+# 1950222608088
+print(user1.__dict__)
+# {'name': 'Kim'}
+print(user2.__dict__)
+# {'name': 'Park'}
+```
+
+### self의 이해
+```python
+class SelfTest:
+    def function1():
+        print('function1 called!')
+    def function2(self):
+        print('function2 called!')
+
+self_test = SelfTest()
+# self_test.function1() # self 매개변수가 없어서 에러가 난다.
+SelfTest.function1() # function1 called!
+self_test.function2() # function2 called!
+
+print(id(self_test))
+SelfTest.function2(self_test) # function2 called!
+```
+
+### 클래스 변수, 인스턴스 변수
+* 클래스 변수는 self가 없고, 인스턴스 변수는 self가 있다.
+
+```python
+class WareHouse:
+    stock_num = 0
+    def __init__(self, name):
+        self.name = name
+        WareHouse.stock_num += 1
+    def __del__(self):
+        WareHouse.stock_num -= 1
+
+user1 = WareHouse('Kim')
+user2 = WareHouse('Park')
+user3 = WareHouse('Lee')
+
+print(user1.__dict__)
+# {'name': 'Kim'}
+print(user2.__dict__)
+# {'name': 'Park'}
+print(user3.__dict__)
+# {'name': 'Lee'}
+print(WareHouse.__dict__) # 클래스 네임스페이스, 클래스 변수(공유)
+# {'__module__': '__main__', 'stock_num': 3, '__init__': <function WareHouse.__init__ at 0x000002BAE830EF70>, '__del__': <function WareHouse.__del__ at 0x000002BAE830E940>, '__dict__': <attribute '__dict__' of 'WareHouse' objects>, '__weakref__': <attribute '__weakref__' of 'WareHouse' objects>, '__doc__': None}
+print(user1.name)
+# Kim
+print(user2.name)
+# Park
+print(user3.name)
+# Lee
+print(user1.stock_num)
+# 3
+del user1
+print(user2.stock_num)
+# 2
+print(user3.stock_num)
+# 2
+```
+
 
 ```python
 class Person():

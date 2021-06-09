@@ -1,4 +1,36 @@
-# Lambda
+# Lambda 람다식
+### 람다식: 메모리 절약, 가독성 향상, 코드 간결
+### 함수는 객체 생성 -> 리소스(메모리) 할당
+### 람다는 즉시 실행(Heap 초기화) -> 메모리 초기화
+### 일반적 함수 -> 변수 할당
+```python
+def mul_10(num : int) -> int:
+    return num * 10
+
+var_func = mul_10
+print(var_func)
+print(type(var_func))
+print(var_func(10))
+# <function mul_10 at 0x000002BAE830E790>
+# <class 'function'>
+# 100
+
+lambda_mul_10 = lambda num: num * 10
+print('>>>', lambda_mul_10(10))
+# >>> 100
+```
+
+```python
+def func_final(x, y, func):
+    print(x * y * func(10))
+
+func_final(10, 10, lambda_mul_10)
+# 10000
+
+print(func_final(10, 10, lambda x : x * 1000))
+# 1000000
+```
+
 이름이 있는 함수; 익명함수
 ```python
 numbers = [1,2,3,4,5]
