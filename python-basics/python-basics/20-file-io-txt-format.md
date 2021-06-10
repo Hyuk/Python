@@ -1,4 +1,4 @@
-# File I/O - File Input / Output
+# File I/O - Text File
 
 ## 모드
 * 읽기 모드: r (read)
@@ -71,9 +71,6 @@ data
 data.split("\n")
 # ['hellow world', 'python programming', '한글']
 ```
-
-
-
 
 ## with
 with와 함께 open 문을 실행하면 close가 필요없이 블락이 끝나면 자동으로 닫힌다.
