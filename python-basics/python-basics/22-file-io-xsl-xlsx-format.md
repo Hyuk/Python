@@ -20,6 +20,9 @@ print()
 print(xlsx.tail()) # 마지막 5개를 보여준다.
 # 데이터 확인
 print(xlsx.shape) # 행, 열
+# 엑셀 or CSV 다시 쓰기
+xlsx.to_excel('./resource/result.xlsx', index=False)
+xlsx.to_csv('./resource/result.csv', index=False)
 ```
 
 
