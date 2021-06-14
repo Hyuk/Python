@@ -11,7 +11,7 @@ import datetime
 
 # DB 생성 & Auto Commit
 # 본인 DB 경로
-conn = sqlite3.connect('D:/hugo/playground/python3/python/playground/python_basic/records.db', isolation_level=None)
+conn = sqlite3.connect('./resource/records.db', isolation_level=None)
 
 # Cursor 연결
 cursor = conn.cursor()
