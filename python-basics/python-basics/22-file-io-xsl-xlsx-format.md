@@ -12,7 +12,7 @@ $ pip install pandas
 ```python
 import pandas as pd
 
-# sheetname='시트명' 또는 숫자, header=3, skiprow=숫자
+# '시트명' 또는 숫자, header=3, skiprow=숫자
 xlsx = pd.read_excel('./resource/sample.xlsx')
 # 상위 데이터 확인
 print(xlsx.head()) # 첫 번째부터 5개 까지만 보여준다.
